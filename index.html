@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Visualizer</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div id="head">
+                <h1>Sorting Visualizer</h1>
+            </div>
+            <div class="navbar">
+                <div class="creates">
+                    <button class="create">New Array</button>
+                </div>
+                <div class="slider">
+                    <div>
+                        <h3>
+                            <span id="size">Size</span>
+                            <input type="range" name="" id="arr_size" min="3" max="100">
+                        </h3>
+                    </div>
+                    <div>
+                        <h3>
+                            <span id="speed">Speed</span>
+                            <input type="range" name="" id="arr_speed" min="10" max="1000">
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="sort-button">
+                <button class="bubble-btn bubbleSort">Bubble Sort</button>
+                <button class="quick-btn selectionSort">Quick Sort</button>
+                <button class="merge-btn insertionSort">Merge Sort</button>
+                <button class="selection-btn quickSort">Selection Sort</button>
+                <button class="insertion-btn mergeSort">Insertion Sort</button>
+            </div>
+            <div id="bars" class="visual"></div>
+        </div>
+        <script src="javascript/visualize.js"></script>
+        <script src="javascript/bubble.js"></script>
+        <script src="javascript/quick.js"></script>
+        <script src="javascript/merge.js"></script>
+        <script src="javascript/selection.js"></script>
+        <script src="javascript/insertion.js"></script>
+    </div>
+</body>
+
+</html>
